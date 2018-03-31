@@ -1,0 +1,670 @@
+/*
+
+IMAGINARY RESTAURANT 2.0
+BY: DAVID REPASKY
+
+*/
+
+/*HTML BACKGROUND IMAGE*/
+/*YOU MUST CHANGE gray-1500 TO AN IMAGE YOU CHOOSE*/
+
+html {
+  background: url(gray-1500.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* PAGE CONTAINER */
+
+.container {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* NAV MENU & RELATED CLASSES */
+
+/*This class creates the black bar that floats above the page that the user interacts with to toggle
+the navigation menu*/
+
+.navigation-fixed-top {
+  position: fixed;
+  display: none;
+  background-color: black;
+  width: 98.25%;
+  margin-left:auto;
+  margin-right: auto;
+  height: 90px;
+  top: 0%;
+  color: #fff;
+  text-shadow: 2px 2px 1px #333;
+  }
+
+.navigation-placeholder{
+  display: block;
+  background-color: black;
+  width: 1200px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0%;
+  color: #fff;
+  text-shadow: 2px 2px 1px #333;
+}  
+  
+  
+.navigation-fixed {
+  position: fixed;
+  display: none;
+  background-color: black;
+  width: 1200px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0%;
+  color: #fff;
+  text-shadow: 2px 2px 1px #333;
+  }
+
+/* This controls the links on the fixed navigation bar at the top of the screen */
+
+.navigation-fixed a {
+  color: #fff;
+  float: left;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #999;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.navigation-fixed-top a {
+  color: #fff;
+  float: left;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #999;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+/* This is the transparent nav-menu and the related classes */
+.nav-menu {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 90px;
+  height: 150px;
+  width: 1200px;
+  max-width: 100%;
+  color: #fff;
+  text-shadow: 2px 2px 1px #333;
+  font-size: 21px;
+  display: none;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+  float: left;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.nav-menu li {
+  margin-left: 25px;
+  margin-right: 25px;
+  float: left;
+}
+
+.nav-menu a {
+  font-family: Pacifico, sans-serif;
+  text-shadow: 2px 2px 2px #ff99cc;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+.nav-menu-top {
+
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 90px;
+  height: 150px;
+  width: 98.75%;
+  color: #fff;
+  text-shadow: 2px 2px 1px #333;
+  font-size: 21px;
+  display: none;
+
+}
+
+.nav-menu-top ul {
+  list-style-type: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+  float: left;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.nav-menu-top li {
+  margin-left: 25px;
+  margin-right: 25px;
+  float: left;
+}
+
+.nav-menu-top a {
+  font-family: Pacifico, sans-serif;
+  text-shadow: 2px 2px 2px #ff99cc;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
+}
+
+/* This controls the logo */
+header img {
+  display: block;
+  padding-top: 175px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SECTION 1 / AKA HOMEPAGE */
+
+.homepage {
+  background-color: #fff;
+  height: auto;
+  display: block;
+}
+
+.homepage ul {
+  list-style-type: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+  float: left;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.homepage li {
+  margin-left: 25px;
+  margin-right: 25px;
+  float: left;
+  display: block;
+}
+
+/* Section1 Heading & Text Classes */
+
+.homepage h2 {
+  text-align: left;
+  width: 100%;
+}
+
+.homepage p {
+  font-family: Georgia, serif;
+  font-weight: 300;
+  width: 100%;
+}
+
+/* SECTION 2 / AKA PAGE 2 */
+
+.about1 {
+  background-color: #fff;
+  height: auto;
+  display: none;
+}
+
+
+/* Section 2 Column Container */
+
+.about1 .two-column {
+  width: 100%;
+  height: auto;
+  display: inline;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 2px solid #999;
+}
+
+/* First Column */ 
+
+.about1 .column1 {
+  width: 500px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+  margin-left: 35px;
+  text-align: justify;
+}
+
+/* Second Column */
+
+.about1 .column2 {
+  width: 500px;
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  float: left;
+  text-align: justify;
+}
+
+/* Column Container */
+.about1 .two-thirds-column {
+  width: 100%;
+  height: auto;
+  display: inline;
+}
+
+/* One Third Column is Normally the One With the Image */
+.about1 .one-third {
+  width: 300px;
+  height: auto;
+  display: inline;
+  float: left;
+  margin-right: 30px;
+  margin-left: 35px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+/* Two Third Column is Normally the One With the Text */
+.about1 .two-third {
+  width: 700px;
+  height: auto;
+  display: inline;
+  float: left;
+  margin-top: 40px;
+}
+
+/* Section 2 Headings & Paragraph Styles */
+.about1 h3 {
+  font-family: Georgia, serif;
+  font-size: 1em;
+}
+
+.about1 p {
+  font-family: Georgia, serif;
+  font-weight: 300;
+}
+
+/* SECTION 3 / AKA PAGE 3 */
+
+.about2 {
+  background-color: #fff;
+  height: auto;
+  display: none;
+}
+
+/* Container for the Right-Facing Column */
+.two-thirds-right {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+}
+
+/* Container for the Other Left-Facing Column */
+.about2 .two-thirds-column {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+}
+
+/* The Container for the Text */
+.about2 .two-third {
+  width: 700px;
+  height: auto;
+  display: inline-block;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+
+/* The Container for the Image */
+.about2 .one-third {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  float: left;
+  margin-top: 28px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: auto;
+}
+
+/* Controls the Dimensions of the Image */
+.about2 .one-third img {
+  width: 300px;
+  height: 200px;
+}
+
+/* Section 3 Headings & Paragraph Styles */
+.about2 h3 {
+  font-family: Georgia, serif;
+  font-weight: 300;
+}
+
+/* SECTION 4 / AKA PAGE 4 */
+.contact {
+  background-color: #fff;
+  height: auto;
+  display: none;
+}
+
+/* Container for the Columns */
+.contact .two-column {
+  width: 100%;
+  height: auto;
+  display: inline;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 2px solid #999;
+}
+
+/* Left Column */
+.contact .column1 {
+  width: 500px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+  margin-left: 35px;
+  text-align: justify;
+  border-right: 2px solid #999;
+}
+
+/* Right Column */
+.contact .column2 {
+  width: 500px;
+  height: auto;
+  float: left;
+  text-align: justify;
+}
+
+/* Styles Links in Section 4 */
+.contact a {
+  text-decoration: none;
+  color: #ba0d0d;
+}
+
+/* SECTION 5 / AKA PAGE 5 */
+.menu1 {
+  background-color: #fff;
+  height: auto;
+  display: none;
+}
+
+/* Section 5 Font Styles */
+.menu1 h1 {
+  text-align: center;
+  display: block;
+  font-size: 3em;
+}
+
+.menu1 h2 {
+  text-align: center;
+  display: block;
+  font-size: 2em;
+}
+
+.menu1 h3 {
+  text-align: center;
+  display: block;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+/* SECTION 6 / AKA PAGE 6 */
+
+.menu2 {
+  background-color: #fff;
+  height: auto;
+  display: none;
+}
+
+/* Section 6 Font Styles */
+.menu2 h1 {
+  text-align: center;
+  display: block;
+  font-size: 3em;
+}
+
+.menu2 h2 {
+  text-align: center;
+  display: block;
+  font-size: 2em;
+}
+
+.menu2 h3 {
+  text-align: center;
+  display: block;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+/* SECTION 7 / AKA PAGE 7 */
+
+.menu3 {
+  background-color: #fff;
+  height: auto;
+  display: none;
+}
+
+/* Section 7 Font Styles */
+
+.menu3 h1 {
+  text-align: center;
+  display: block;
+  font-size: 3em;
+}
+
+.menu3 h2 {
+  text-align: center;
+  display: block;
+  font-size: 2em;
+}
+
+.menu3 h3 {
+  text-align: center;
+  display: block;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+/* SECTION 8 /AKA PAGE 8 */
+
+.testimonials {
+  background-color: #fff;
+  height: auto;
+  display: none;
+}
+
+/* Review Image Container */
+.testimonials .review-one-third {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin-right: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 35px;
+  vertical-align: top;
+}
+
+/* Dimensions for the Image Itself */
+.testimonials .review-one-third img {
+  width: 75%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Review Content Container */
+.testimonials .review-two-third {
+  width: 700px;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Container for the Inline Elements */
+.testimonials .review-container {
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section 8 Font Styles */
+.testimonials h2 {
+  font-size: 2em;
+}
+
+.testimonials h1 {
+  font-size: 3em;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-shadow: 2px 2px 1px #999;
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 350px;
+}
+
+footer h2 {
+  margin-top: 40px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Georgia, serif;
+}
+
+/* MISCELLANEOUS CSS */
+
+/* Displays Element Inline */
+.inline {
+  display: inline;
+  float: left;
+}
+
+/* Add this class to your images!  Make them responsive! */
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Creates Edge-to-Edge Image */
+.fullwidth-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style important text like a homepage quote */
+.quote {
+  font-family: Georgia, serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 2px #999;
+  text-transform: uppercase;
+}
+
+/* Used to style any heading with Pacifico font */
+.pacifico {
+  font-family: Pacifico, sans-serif;
+  text-shadow: 2px 2px 1px #999;
+  color: #ba0d0d;
+  font-weight: 300;
+}
+
+/* Instantly make any text red */
+.red {
+  color: #ba0d0d;
+  text-shadow: 2px 2px 2px #999;
+}
+
+/* Add rounding to any square image */
+.rounded {
+  border-radius: 150px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  width: 300 !important;
+  display: block;
+}
+
+/* Self Clearing Div with height of 65px */
+.clear {
+  height: 65px;
+  clear: both;
+  font-size: 0;
+}
+
+/* Used to center images in an unordered list responsively */
+.image-center {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Used to center blocks of text */
+.blurb-center {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Used to create whitespace between container and content */
+.ninety {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
