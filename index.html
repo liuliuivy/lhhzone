@@ -415,6 +415,21 @@
 	</div>
 <!-- for bootstrap working -->
 <script src="js/bootstrap.js"></script>
+<script>
+	var projects = ["ecommerce","hamburger","audioplayer","videoplayer","portfolio","weather"];
+	document.onclick=function(){
+		var slides = document.getElementsByClassName("slide current");
+		if(slides.length===1){
+			var index = $(slides[0]).index();
+			var projectURL = "projects/" + projects[index] + "/index.html";
+			var onclickhandler = function(){
+				window.location=projectURL;
+			};
+			slides[0].removeEventListener("click", onclickhandler);
+			slides[0].addEventListener("click", onclickhandler);
+		}
+	}
+</script>
 <!-- //for bootstrap working -->
 </body>
 </html>
