@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<?php
+	require_once('_include/head.php');
+?>
+</head>
+<body>
+
+<div id="logo"><a href="index.php"><img src="_imgs/_main/logo.png"></a></div>
+<div id="menuHolder" style="top:-220px;">
+<div id="menu">
+	<?php
+		for($i=1;$i<=5;$i++){
+			echo '<a href="#page'.$i.'" onclick=\'slideMenuOut("menuHolder")\' id="bt'.$i.'" class="buttons"></a>';
+		}
+	?>
+</div>
+<div id="menuButton"><a href="#" onclick='toggleMenu("menuHolder")'><img src="_imgs/_buttons/menu.png"></a></div>
+</div>
+<section id="home">
+	<content><img src="_imgs/_main/banner.png"></content>
+	<bottomBox></bottomBox>
+</section>
+
+<?php
+for($i=1;$i<=3;$i++){
+	echo '<section id="page'.$i.'"><content>';
+	include('_include/page'.$i.'.php');
+	echo '</content><bottomBox></bottomBox></section>';
+}
+?>
+
+<section id="page4">
+	<content>
+		<?php include_once('_include/form.php');?>
+	</content>
+	<bottomBox></bottomBox>
+</section>
+
+<section id="page5">
+	<content>		
+		<?php include('_include/aboutus.php');?>
+	</content>
+	<bottomBox>
+		<footer>
+			<small>
+				<?php echo $copyright ?>
+			</small>
+		</footer>
+	</bottomBox>
+</section>
+<?php include_once('../../assets/php/statistics.php'); ?>
+</body>
+</html>
