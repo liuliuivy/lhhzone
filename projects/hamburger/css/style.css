@@ -1,9 +1,3 @@
-/*--Author: W3Layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
- --*/
-/*-- Reset Code --*/
 body { 
 	padding: 0;
 	margin: 0;
@@ -75,11 +69,11 @@ ul{
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-.banner_text_w3layouts{
+.banner_text_layouts{
     text-align: center;
     padding: 16.5em 0 ;
 }
-.banner_text_w3layouts h3 {
+.banner_text_layouts h3 {
     color: #7fbb00;
     font-size: 3em;
     margin: 0;
@@ -87,7 +81,7 @@ ul{
     text-transform: uppercase;
     letter-spacing: 10px;
 }
-.banner_text_w3layouts p {
+.banner_text_layouts p {
     color: #fff;
     font-size: 1.3em;
     margin: 2.5em 0;
@@ -291,7 +285,7 @@ border-color:#FFf;
     border: 2px solid #ff5301;
 }
 /*-- //slider --*/
-.agileits-w3layouts-info img{
+.agileits-layouts-info img{
 	width:100%;
 }
 .modal-header h2{
@@ -321,7 +315,7 @@ border-color:#FFf;
     float: left;	
     font-family: 'Redressed', cursive;
 }
-.w3layouts-nav-right {
+.layouts-nav-right {
     float: right;
     line-height: 85px;
     margin-right: 5em;
@@ -803,7 +797,7 @@ p.address {
 .agile-footer ul li a:hover{
 	color:#212121;
 }
-.agileits_w3layouts-map iframe{
+.agileits_layouts-map iframe{
 	width:100%;
 	min-height:400px;
 }
@@ -823,7 +817,7 @@ p.address {
     color: #000;
 }
 /*-- //footer --*/
-.w3layouts-about,.wthreelocationsaits,.packages,.team,.testimonials,.blog,.contact{
+.layouts-about,.wthreelocationsaits,.packages,.team,.testimonials,.blog,.contact{
 	padding:4em 0;
 }
 /*-- flex-slider --*/
@@ -959,13 +953,13 @@ p.address {
 }
 @media screen and (max-width: 1024px){}
 @media screen and (max-width: 991px){
-	.banner_text_w3layouts h3 {
+	.banner_text_layouts h3 {
 		letter-spacing: 5px;
 	}
-	.banner_text_w3layouts {
+	.banner_text_layouts {
 		padding: 13.5em 0;
 	}
-	.w3layouts-nav-right {
+	.layouts-nav-right {
 		margin-right: 2em;
 	}
 	#about .container,#team .container ,#gallery .container  {
@@ -1084,10 +1078,10 @@ p.address {
 	.agileits-aboutright {
 		padding: 1em;
 	}
-	.banner_text_w3layouts {
+	.banner_text_layouts {
 		padding: 10.5em 0;
 	}
-	.banner_text_w3layouts h3 {
+	.banner_text_layouts h3 {
 		letter-spacing: 4px;
 	}
 	.agileits-aboutright {
@@ -1107,7 +1101,7 @@ p.address {
 	.agileits-aboutright.about-bottom, .agileits-aboutright.about-bottom1 {
 		width: 48%;
 	}
-	.banner_text_w3layouts {
+	.banner_text_layouts {
 		padding: 5.5em 0;
 	}
 	.w3_tab_img_left {
@@ -1122,10 +1116,10 @@ p.address {
 	.agile_timing_right {
 		padding: 3em;
 	}
-	.agileits_w3layouts-map iframe {
+	.agileits_layouts-map iframe {
 		min-height: 330px;
 	}
-	.banner_text_w3layouts h3 {
+	.banner_text_layouts h3 {
 		font-size: 2.5em;
 	}
 	.w3l-about {
@@ -1134,7 +1128,7 @@ p.address {
 }
 @media screen and (max-width: 640px){}
 @media screen and (max-width: 600px){
-	.banner_text_w3layouts h3 {
+	.banner_text_layouts h3 {
 		letter-spacing: 3px;
 	}
 	.w3l-about.timing .container {
@@ -1151,7 +1145,7 @@ p.address {
 	}
 }
 @media screen and (max-width: 568px){
-	.banner_text_w3layouts h3 {
+	.banner_text_layouts h3 {
 		letter-spacing: 1px;
 	}
 	.agile_timing_right {
@@ -1164,7 +1158,7 @@ p.address {
 	.agileinfo-contactright input[type="text"], .agileinfo-contactright input[type="email"],.agileinfo-contactright input[type="submit"]{
 		width:100%;
 	}
-	.banner_text_w3layouts p {
+	.banner_text_layouts p {
 		font-size: 1.1em;
 		letter-spacing: 0px;
 	}
@@ -1173,7 +1167,7 @@ p.address {
 	.w3-agile-logo h1 a {
 		padding: 1em 1em 1em 0;
 	}
-	.banner_text_w3layouts h3 {
+	.banner_text_layouts h3 {
 		font-size: 2.1em;
 	}
 	.nav-tabs > li > a {
@@ -1193,13 +1187,13 @@ p.address {
 	
 }
 @media screen and (max-width: 414px){
-	.w3layouts-nav-right {
+	.layouts-nav-right {
 		clear: both;
 		width: 100%;
 		margin: 0 auto;
 		line-height: 0;
 	}
-	.banner_text_w3layouts {
+	.banner_text_layouts {
 		padding: 2em 0 3em;
 	}
 	ul.list-right li {    
@@ -1221,7 +1215,7 @@ p.address {
 	.agileits-aboutright.about-bottom, .agileits-aboutright.about-bottom1 {
 		width: 100%;
 	}
-	.banner_text_w3layouts h3 {
+	.banner_text_layouts h3 {
 		font-size: 1.8em;
 	}
 	.agileits-aboutright.about-bottom, .agileits-aboutright.about-bottom1{
@@ -1257,7 +1251,7 @@ p.address {
 	.agile_timing_right ul li span {
 		width: 44%;
 	}
-	.agileits_w3layouts-map iframe {
+	.agileits_layouts-map iframe {
 		min-height: 280px;
 	}
 	.agileinfo-copyright p{
@@ -1274,13 +1268,13 @@ p.address {
 	.nav-tabs > li {
 		margin: 0 7px 0 0;
 	}
-	.banner_text_w3layouts p {
+	.banner_text_layouts p {
 		font-size: 0.9em;
 	}
-	.banner_text_w3layouts h3 {
+	.banner_text_layouts h3 {
 		font-size:1.6em;
 	}
-	.banner_text_w3layouts p{
+	.banner_text_layouts p{
 		margin:1em 0;
 		letter-spacing:0.5px;
 	}
@@ -1315,7 +1309,7 @@ p.address {
 	.agile_timing_right a {
 		letter-spacing: 2px;
 	}
-	.banner_text_w3layouts h3 {
+	.banner_text_layouts h3 {
 		height: 38px;
 	}
 	.w3l-about {
@@ -1331,7 +1325,7 @@ p.address {
 		width: 100%;
 		margin-bottom: 1em;
 	}
-	.agileits_w3layouts-map iframe {
+	.agileits_layouts-map iframe {
 		min-height: 250px;
 	}
 	.w3_tab_img_left {
@@ -1341,7 +1335,7 @@ p.address {
 	.callbacks_nav.next {
 		right: -12px;
 	}
-	.banner_text_w3layouts p {
+	.banner_text_layouts p {
 		margin: 1em 0 2em;
 	}
 

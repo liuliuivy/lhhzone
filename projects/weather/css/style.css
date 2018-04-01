@@ -1,6 +1,6 @@
 /*--
-Author: W3layouts
-Author URL: http://w3layouts.com
+Author: layouts
+Author URL: http://layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
@@ -111,7 +111,7 @@ a{
 	width:40%;
 	float:left;
 }
-.w3layouts_date_year {
+.layouts_date_year {
     font-size: 1em;
 	color:#fff;
 	width:60%;
@@ -119,7 +119,7 @@ a{
 	text-align:right;
 	padding-top:0.6em;
 }
-.w3layouts_main {
+.layouts_main {
     padding: 0.6em;
     background: #2388b9;
 }
@@ -131,7 +131,7 @@ a{
     width: 10%;
     background: rgba(0, 0, 0, 0.62);
 }
-.w3layouts_head {
+.layouts_head {
     float: right;
     width: 50%;
     text-align: center;
@@ -351,7 +351,7 @@ ul.w3ls-sub-grid1 li {
 	}
 }
 @media screen and (max-width: 600px){
-	#w3time,.w3layouts_date_year{
+	#w3time,.layouts_date_year{
 		width:100%;
 		text-align:center;
 	}

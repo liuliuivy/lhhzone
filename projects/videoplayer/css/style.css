@@ -1,6 +1,6 @@
 /*--
-Author: W3layouts
-Author URL: http://w3layouts.com
+Author: layouts
+Author URL: http://layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
@@ -48,7 +48,7 @@ header h1 {
 }
 /*-- //header --*/
 /*-- content --*/
-.w3layouts {
+.layouts {
 	width:50%;
 	margin:0 auto;
 }
@@ -116,7 +116,7 @@ footer p a:hover {
 	body {
 		min-height:850px;
 	}
-	.w3layouts {
+	.layouts {
 		width: 55%;
 	}
 	.w3l-video-operate {
@@ -139,7 +139,7 @@ footer p a:hover {
 	body {
 		min-height:722px;
 	}
-	.w3layouts {
+	.layouts {
 		width: 57%;
 	}
 	.w3l-video-operate {
@@ -159,7 +159,7 @@ footer p a:hover {
 	body {
 		min-height:750px;
 	}
-	.w3layouts {
+	.layouts {
 		width: 58%;
 	}
 	.w3l-video-operate {
@@ -179,7 +179,7 @@ footer p a:hover {
 	header h1 {
 		font-size: 33px;
 	}
-	.w3layouts {
+	.layouts {
 		width: 65%;
 	}
 	.wthree {
@@ -193,12 +193,12 @@ footer p a:hover {
 	body {
 		min-height:720px;
 	}
-	.w3layouts {
+	.layouts {
 		width: 68%;
 	}
 }
 @media (max-width: 900px){ 	
-	.w3layouts {
+	.layouts {
 		width: 75%;
 	}
 	header h1 {
@@ -210,7 +210,7 @@ footer p a:hover {
 		font-size: 30px;
 		letter-spacing: 3px;
 	}
-	.w3layouts {
+	.layouts {
 		width: 78%;
 	}
 }
@@ -253,7 +253,7 @@ footer p a:hover {
 	}
 }
 @media (max-width: 667px){ 	
-	.w3layouts {
+	.layouts {
 		width: 85%;
 	}
 	footer p {
@@ -262,7 +262,7 @@ footer p a:hover {
 	}
 }	
 @media (max-width: 640px){ 	
-	.w3layouts {
+	.layouts {
 		width: 90%;
 	}
 	header h1 {
