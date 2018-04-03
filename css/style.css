@@ -85,6 +85,10 @@ input[type="submit"],ul.address li ul.address-text li a,.agile_about_blog_right_
     text-align: center;
 }
 
+.resp-tab-item a {
+	color: inherit;
+}
+
 .resp-tab-item li:last-child{
 	border-right:none;
 }
