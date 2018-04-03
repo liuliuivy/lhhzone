@@ -1,8 +1,8 @@
 /*--
-Author: layouts
-Author URL: http://layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+Author: 
+Author: 
+
+
 --*/
 /*--reset--*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
@@ -52,14 +52,14 @@ header h1 {
 	width:50%;
 	margin:0 auto;
 }
-.w3l-video-operate a {
+.lo-video-operate a {
 	color:#fff;
 	margin: 0 10px;
 }
-.w3l-video-operate a:hover {
+.lo-video-operate a:hover {
 	color:#fff;
 }
-.w3l-video-operate{
+.lo-video-operate{
     margin: 10px 0;
 }
 #bar {
@@ -119,7 +119,7 @@ footer p a:hover {
 	.layouts {
 		width: 55%;
 	}
-	.w3l-video-operate {
+	.lo-video-operate {
 		margin: 15px 0;
 	}
 	footer {
@@ -142,7 +142,7 @@ footer p a:hover {
 	.layouts {
 		width: 57%;
 	}
-	.w3l-video-operate {
+	.lo-video-operate {
 		margin: 12px 0;
 	}
 	footer {
@@ -162,7 +162,7 @@ footer p a:hover {
 	.layouts {
 		width: 58%;
 	}
-	.w3l-video-operate {
+	.lo-video-operate {
 		margin: 12px 0;
 	}
 	footer {
@@ -218,7 +218,7 @@ footer p a:hover {
 	body {
 		min-height:867px;
 	}
-	.w3l-video-operate {
+	.lo-video-operate {
 		margin: 20px 0;
 	}
 	footer {
@@ -235,7 +235,7 @@ footer p a:hover {
 	body {
 		min-height:680px;
 	}
-	.w3l-video-operate {
+	.lo-video-operate {
 		margin: 15px 0;
 	}
 	footer {
@@ -335,7 +335,7 @@ footer p a:hover {
 	}
 }
 @media (max-width: 320px){ 
-	.w3l-video-operate a {
+	.lo-video-operate a {
 		margin: 0 5px;
 	}
 	header h1 {

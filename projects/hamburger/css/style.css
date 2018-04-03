@@ -325,12 +325,12 @@ ul.list-right li{
 	list-style-type: none;
 	display:inline-block;
 }
-ul.list-right.w3l li i {
+ul.list-right.lo li i {
     font-size: 1.5em;
     color: #7fbb00;
     padding: 0.5em;
 }
-ul.list-right.w3l {
+ul.list-right.lo {
     margin: 1em 3em 0 0em;
 }
 .list-right li span {
@@ -339,7 +339,7 @@ ul.list-right.w3l {
     font-weight: 600;
 }
 /* -- about --*/
-.w3l-about{
+.lo-about{
 	padding:4em 0;
 }
 h3.agileits-title {
@@ -408,7 +408,7 @@ video.agile-media {
 section.slider {
     border: 2px solid #ffffff;
 }
-div#team,.w3l-about.sponsors {
+div#team,.lo-about.sponsors {
     background: url(../images/8.jpg) no-repeat center;
     background-size: cover;
 	background-attachment:fixed;
@@ -522,7 +522,7 @@ div#services {
 .service{
 	padding:5em 0 0;
 }
-.w3ls_service_left_grid{
+.los_service_left_grid{
 	width: 80px;
     height: 80px;
     background: #f5f5f5;
@@ -534,7 +534,7 @@ div#services {
    background: url(../images/s.jpg) center no-repeat;
     min-height: 256px;
 }
-.w3ls_service_left_grid i{
+.los_service_left_grid i{
 	font-size: 1.5em;
     color: #212121;
     line-height:3.5em;
@@ -549,7 +549,7 @@ div#services {
 	color:#fff;
 	line-height:2em;
 }
-.w3l_service_right_grid,.agileinfo_service_right{
+.lo_service_right_grid,.agileinfo_service_right{
 	padding:0;
 }
 .agileits_service_right{
@@ -558,7 +558,7 @@ div#services {
 .w3_service_right_grid_main{
 	margin-top:2em;
 }
-.w3ls_service_left_grid {
+.los_service_left_grid {
     width: 80px;
     height: 80px;
     background: #f5f5f5;
@@ -669,7 +669,7 @@ li.wthree-time-title {
 }
 /*-- //timing --*/
 /*-- contact --*/
-.w3ls-contact {
+.los-contact {
     background: #fff;
 }
 .agileinfo-contactleft h3 {
@@ -929,7 +929,7 @@ p.address {
 	.agile_timing_left {
 		min-height: 385px;
 	}
-	.w3l-about.timing .container {
+	.lo-about.timing .container {
 		width: 100%;
 	}
 	.agile_timing_right {
@@ -1010,7 +1010,7 @@ p.address {
 	}
 }
 @media screen and (max-width: 900px){
-	.w3l-about {
+	.lo-about {
 		padding: 3em 0;
 	}
 	.agileits-aboutleft {
@@ -1061,7 +1061,7 @@ p.address {
 		width:100%;		
 		padding: 4em;
 	}
-	.w3l-about.timing .container{
+	.lo-about.timing .container{
 		width:85%;
 	}
 }
@@ -1122,7 +1122,7 @@ p.address {
 	.banner_text_layouts h3 {
 		font-size: 2.5em;
 	}
-	.w3l-about {
+	.lo-about {
 		padding: 2.5em 0;
 	}
 }
@@ -1131,7 +1131,7 @@ p.address {
 	.banner_text_layouts h3 {
 		letter-spacing: 3px;
 	}
-	.w3l-about.timing .container {
+	.lo-about.timing .container {
 		width: 94%;
 	}
 	.agileinfo-contactright, .agileinfo-contactleft {
@@ -1199,13 +1199,13 @@ p.address {
 	ul.list-right li {    
 		margin: 0 0.5em;
 	}
-	ul.list-right.w3l {
+	ul.list-right.lo {
 		margin: 0;
 	}
 	.w3-agile-logo h1 a {
 		padding: 1em 0em 0em 0;
 	}
-	ul.list-right.w3l {
+	ul.list-right.lo {
 		margin: 1em auto;
 		width: 60%;
 	}
@@ -1259,7 +1259,7 @@ p.address {
 	}
 }
 @media screen and (max-width: 384px){
-	ul.list-right.w3l {
+	ul.list-right.lo {
 		width: 66%;
 	}
 	#gallery .container {
@@ -1283,7 +1283,7 @@ p.address {
 	}
 }
 @media screen and (max-width: 375px){
-	ul.list-right.w3l {
+	ul.list-right.lo {
 		width: 68%;
 	}
 	.nav-tabs > li {
@@ -1297,7 +1297,7 @@ p.address {
 	}	
 }
 @media screen and (max-width: 320px){
-	ul.list-right.w3l {
+	ul.list-right.lo {
 		width: 81%;
 	}
 	.nav-tabs > li > a {
@@ -1312,10 +1312,10 @@ p.address {
 	.banner_text_layouts h3 {
 		height: 38px;
 	}
-	.w3l-about {
+	.lo-about {
 		padding: 2em 0;
 	}
-	.w3l-about.timing .container {
+	.lo-about.timing .container {
 		width: 100%;
 	}
 	.agile_timing_right{
