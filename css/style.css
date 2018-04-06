@@ -297,7 +297,11 @@ ul.address li ul.address-text li a:hover{
     left: 0%;
 }
 .agileits_introduction{
-    text-align: center;
+	/*text-align: center;*/
+}
+
+.agileits_introduction p{
+	font-size: 18px;
 }
 
 
