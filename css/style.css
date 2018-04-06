@@ -425,6 +425,10 @@ ul.address li ul.address-text li a:hover{
 .agileits_agile_about_portfolio1 {
     margin: 2em 0 0;
 }
+.w3_portfolio_grid {
+   margin:2em 0 0;
+   padding: 1em 0;
+}
 .view {
     float: none;
     overflow: hidden;
@@ -888,7 +892,8 @@ ul.address li ul.address-text li a:hover{
 		font-size: 1.1em;
 	}
 	.agileits_agile_about_blog_left,.agileits_agile_about_blog_right,.agileits_agile_about_mail_left{
-		padding: 0;
+		padding: 1em;
+		margin: 1em;
 	}
 	.agile_about, .agileits_agile_about, .w3agile_map iframe, .agileinfo_map_color {
 		width: 100%;
