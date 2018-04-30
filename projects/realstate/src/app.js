@@ -1,44 +1,47 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import AppRouter, { history } from './routers/AppRouter';
-import configureStore from './store/configureStore';
-import { login, logout } from './actions/auth';
-import 'normalize.css/normalize.css';
-import './styles/styles.scss';
-import 'react-dates/lib/css/_datepicker.css';
-import { firebase } from './firebase/firebase';
-import LoadingPage from './components/LoadingPage';
+import React, { Component } from 'react';
+import './App.css';
+import "./common/css/bootstrap.css";
+import "./common/css/jquery.fancybox.css";
+import "./common/css/style.css";
+import logo from "./common/images/logo.png";
 
-const store = configureStore();
-const jsx = (
-  <Provider store={store}>
-    <AppRouter />
-  </Provider>
-);
-ReactDOM.render(jsx, document.getElementById('app'));
-/*
-let hasRendered = false;
-const renderApp = () => {
-  if (!hasRendered) {
-    ReactDOM.render(jsx, document.getElementById('app'));
-    hasRendered = true;
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <div className="header">
+          <div className="col-xs-4">
+            <div className="logo">
+            <a href="index.html"><img src={logo} alt=""/></a>
+            </div>
+          </div>
+          <div className="col-xs-8 header_right">
+            <span className="menu"></span>
+              <div className="top-menu">
+                <ul>
+                  <li><a className="active scroll" href="index.html"><i className="fa fa-home"> </i>Home</a></li>
+                  <li><a href="about.html"><i className="fa fa-star"> </i> About</a></li>
+                  <li><a href="services.html"><i className="fa fa-thumbs-up"> </i>Services</a></li>
+                  <li><a href="gallery.html"><i className="fa fa-picture-o"> </i>Gallery</a></li>
+                  <li><a href="contact.html"><i className="fa fa-envelope-o"> </i>Contact</a></li>
+                  <div className="clearfix"></div>
+                </ul>
+              </div>
+              {/*<!-- script for menu -->
+                <script>
+                $( "span.menu" ).click(function() {
+                  $( ".top-menu" ).slideToggle( "slow", function() {
+                    // Animation complete.
+                  });
+                });
+              </script>
+              <!-- script for menu -->*/}
+          </div>
+          <div className="clearfix"> </div>
+        </div>
+      </div>
+    );
   }
-};
+}
 
-ReactDOM.render(<LoadingPage />, document.getElementById('app'));
-
-firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
-    store.dispatch(login(user.uid));
-    renderApp();
-    if (history.location.pathname === '/') {
-      history.push('/dashboard');
-    }
-  } else {
-    store.dispatch(logout());
-    renderApp();
-    history.push('/');
-  }
-});
-*/
+export default App;
