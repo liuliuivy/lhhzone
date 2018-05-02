@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+//import $ from "jquery";
 import "../common/css/bootstrap.css";
 import "../common/css/jquery.fancybox.css";
 import "../common/css/style.css";
+import $ from "../common/js/responsiveslides.min.js";
 import logo from "../common/images/logo.png";
 const images = require.context('../common/images', true);
 
@@ -11,7 +13,7 @@ class Slide extends Component {
 			<div className="slider">
 				<div className="callbacks_container">
 					<ul className="rslides" id="slider">
-						<li><img src="images/banner.jpg" className="img-responsive" alt="" />
+						<li><img src={images("./"+"banner"+".jpg")} className="img-responsive" alt="" />
 							<div className="banner_desc">
 								<div className="container">
 									<h1>Est notare quam littera gothica, quam nunc.</h1>
@@ -61,7 +63,7 @@ class Slide extends Component {
 								</div>
 							</div>
 						</li>
-						<li><img src="images/banner1.jpg" className="img-responsive" alt="" />
+						<li><img src={images("./"+"banner1"+".jpg")} className="img-responsive" alt="" />
 							<div className="banner_desc">
 								<div className="container">
 									<h1>Est notare quam littera gothica, quam nunc.</h1>
@@ -111,7 +113,7 @@ class Slide extends Component {
 								</div>
 							</div>
 						</li>
-						<li><img src="images/banner2.jpg" className="img-responsive" alt="" />
+						<li><img src={images("./"+"banner2"+".jpg")} className="img-responsive" alt="" />
 							<div className="banner_desc">
 								<div className="container">
 									<h1>Est notare quam littera gothica, quam nunc.</h1>
@@ -165,6 +167,18 @@ class Slide extends Component {
 				</div>
 			</div>
 		);
+	}
+	
+	componentDidMount() {
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				pager: true,
+			});
+		});
 	}
 }
 
