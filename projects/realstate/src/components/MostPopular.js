@@ -7,7 +7,7 @@ const images = require.context('../common/images', true);
 class MostPopular extends Component{
     render(){
         return (
-          <div class="container">
+            <div>
             <h4 className="m_3">Most Popular</h4>
             <div className="grid_1">
               <div className="col-md-3 box_1">
