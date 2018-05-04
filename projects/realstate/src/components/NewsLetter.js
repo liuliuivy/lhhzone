@@ -1,29 +1,38 @@
-<div class="grid_7">
-				<div class="col-md-4 box_4">
+import React, { Component } from 'react';
+import "../common/css/bootstrap.css";
+import "../common/css/jquery.fancybox.css";
+import "../common/css/style.css";
+
+class NewsLetter extends Component {
+	render() {
+		return (
+
+			<div className="grid_7">
+				<div className="col-md-4 box_4">
 					<h4>Receive our Newsletter</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 						aliq.</p>
-					<div class="search">
+					<div className="search">
 						<form>
-							<input type="text" value="">
-							<input type="submit" value="Subscribe">
+							<input type="text" value="" />
+							<input type="submit" value="Subscribe" />
 						</form>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<address class="footer-addr">
+				<div className="col-md-4">
+					<address className="footer-addr">
 						totam rem aperiam,
-						<br> voluptatum deleniti , USA
-						<br> E-MAIL:
+						<br /> voluptatum deleniti , USA
+						<br /> E-MAIL:
 						<a href="#">MAIL@DEMOLINK.ORG</a>
 
-						<div class="phone">
+						<div className="phone">
 							<span>(500)</span> 1254 6487
 						</div>
 					</address>
 				</div>
-				<div class="col-md-2">
-					<ul class="list_2">
+				<div className="col-md-2">
+					<ul className="list_2">
 						<li>
 							<a href="#">1st &amp; 2nd Mortgages</a>
 						</li>
@@ -41,8 +50,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-md-2">
-					<ul class="list_2">
+				<div className="col-md-2">
+					<ul className="list_2">
 						<li>
 							<a href="#">1st &amp; 2nd Mortgages</a>
 						</li>
@@ -60,5 +69,10 @@
 						</li>
 					</ul>
 				</div>
-				<div class="clearfix"> </div>
+				<div className="clearfix"> </div>
 			</div>
+		)
+	}
+}
+
+export default NewsLetter;
