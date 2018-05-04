@@ -1,5 +1,8 @@
+import jquery from 'jquery';
 // Easy Responsive Tabs Plugin
 // Author: Samson.Onna <Email : samson3d@gmail.com>
+let jQuery = jquery;
+
 (function ($) {
     $.fn.extend({
         easyResponsiveTabs: function (options) {
@@ -55,6 +58,8 @@
                 var count = 0,
                     $tabContent;
                 $respTabs.find('.resp-tab-item').each(function () {
+                    var $tabItem;
+                    
                     $tabItem = $(this);
                     $tabItem.attr('aria-controls', 'tab_item-' + (count));
                     $tabItem.attr('role', 'tab');
@@ -108,4 +113,6 @@
         }
     });
 })(jQuery);
+
+export default jQuery;
 
