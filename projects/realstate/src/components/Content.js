@@ -5,6 +5,8 @@ import "../common/css/style.css";
 import MostPopular from "./MostPopular";
 import WantToSell from "./WantToSell";
 import ContentBottom from "./ContentBottom";
+import NewsLetter from "./NewsLetter";
+import CopyRight from "./CopyRight";
 
 class Content extends Component{
     render(){
@@ -14,6 +16,8 @@ class Content extends Component{
                 <MostPopular/> 
                 <ContentBottom/>
                 <WantToSell/>
+                <NewsLetter/>
+                <CopyRight/>
                 </div>
             </div>
         )
