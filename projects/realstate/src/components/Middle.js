@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import $ from '../common/js/easyResponsiveTabs.js';
+
+import HousingBox from './HousingBox';
+
 import "../common/css/bootstrap.css";
 import "../common/css/jquery.fancybox.css";
 import "../common/css/style.css";
+
+
 const images = require.context('../common/images', true);
 
 class Middle extends Component {
     render() {
+        const { housings } = this.props;
+        console.log(housings)
+        debugger;
         return (
             <div className="content_bottom">
                 <div className="col-md-7">
@@ -28,75 +37,11 @@ class Middle extends Component {
                             </div>
                         <div className="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                                 <ul className="tab_img tab_1">
-                                    <li>
-                                        <div className="client_box1">
-                                            <img src={images("./" + "pic1" + ".jpg")} className="img-responsive" alt="" />
-                                            <div className="box_type">$&nbsp;650</div>
-                                            <h3 className="m_1">
-                                                <a href="single.html">Dolor Sit</a>
-                                            </h3>
-                                            <div className="boxed_mini_details clearfix">
-                                                <span className="area first">
-                                                    <strong>Garage</strong>
-                                                    <i className="fa fa-plane icon1"></i>
-                                                    2</span>
-                                                <span className="status">
-                                                    <strong>Baths</strong>
-                                                    <i className="fa fa-retweet icon1"> </i>
-                                                    2</span>
-                                                <span className="bedrooms last">
-                                                    <strong>Beds</strong>
-                                                    <i className="fa fa-building-o icon1"></i>
-                                                    2</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="client_box1">
-                                            <img src={images("./" + "pic2" + ".jpg")} className="img-responsive" alt="" />
-                                            <div className="box_type">$&nbsp;450</div>
-                                            <h3 className="m_1">
-                                                <a href="single.html">Dolor Sit</a>
-                                            </h3>
-                                            <div className="boxed_mini_details clearfix">
-                                                <span className="area first">
-                                                    <strong>Garage</strong>
-                                                    <i className="fa fa-plane icon1"></i>
-                                                    2</span>
-                                                <span className="status">
-                                                    <strong>Baths</strong>
-                                                    <i className="fa fa-retweet icon1"> </i>
-                                                    2</span>
-                                                <span className="bedrooms last">
-                                                    <strong>Beds</strong>
-                                                    <i className="fa fa-building-o icon1"></i>
-                                                    2</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="last">
-                                        <div className="client_box1">
-                                            <img src={images("./" + "pic3" + ".jpg")} className="img-responsive" alt="" />
-                                            <div className="box_type">$&nbsp;220</div>
-                                            <h3 className="m_1">
-                                                <a href="single.html">Dolor Sit</a>
-                                            </h3>
-                                            <div className="boxed_mini_details clearfix">
-                                                <span className="area first">
-                                                    <strong>Garage</strong>
-                                                    <i className="fa fa-plane icon1"></i>
-                                                    2</span>
-                                                <span className="status">
-                                                    <strong>Baths</strong>
-                                                    <i className="fa fa-retweet icon1"> </i>
-                                                    2</span>
-                                                <span className="bedrooms last">
-                                                    <strong>Beds</strong>
-                                                    <i className="fa fa-building-o icon1"></i>
-                                                    2</span>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    {housings.map((housing, ind) => (
+                                        <li className={ind === housings.length-1 ? "last" : ""}>
+                                            <HousingBox {...housing} />
+                                        </li>
+                                    ))}
                                     <div className="clearfix"></div>
                                 </ul>
                                 <ul className="tab_img">
@@ -314,5 +259,11 @@ class Middle extends Component {
     }
 }
 
+const mapStateToProps = state => ({
+    housings: state.housings
+})
 
-export default Middle;
+export default connect(
+    mapStateToProps,
+    null
+)(Middle)
