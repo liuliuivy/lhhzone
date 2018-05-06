@@ -11,9 +11,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav/>
-        <Slide/>
-        <Content/>
+        <Nav />
+        <Slide />
+        <Content />
       </div>
     );
   }
