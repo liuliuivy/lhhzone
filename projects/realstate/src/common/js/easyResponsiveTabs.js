@@ -1,7 +1,7 @@
-import jquery from 'jquery';
+import jQuery from "jquery";
 // Easy Responsive Tabs Plugin
 // Author: Samson.Onna <Email : samson3d@gmail.com>
-let jQuery = jquery;
+let jQuery2 = jQuery;
 
 (function ($) {
     $.fn.extend({
@@ -112,7 +112,7 @@ let jQuery = jquery;
             });
         }
     });
-})(jQuery);
+})(jQuery2);
 
-export default jQuery;
+export default jQuery2;
 
