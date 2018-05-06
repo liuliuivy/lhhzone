@@ -8,12 +8,16 @@ import registerServiceWorker from './registerServiceWorker';
 import configureStore from './store/configureStore';
 import { addHousing } from './actions/housings';
 
-const store = configureStore();
+import housings from "./common/data"
 
-store.dispatch(addHousing({ description: "presale", price: 4500 }));
-store.dispatch(addHousing({ description: "second hand", price: 3000 }));
+const store = configureStore();
+setTimeout(()=>{housings.forEach(housing => {
+    store.dispatch(addHousing({ ...housing }));
+})}, 5000)
+
+
+
 const state = store.getState();
-console.log(state);
 
 const jsx = (
     <Provider store={store}>
