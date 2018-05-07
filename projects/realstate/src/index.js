@@ -17,7 +17,7 @@ setTimeout(()=>{housings.forEach(housing => {
     store.dispatch(addHousing({ ...housing }));
 })}, 5000)
 setTimeout(()=>{agents.forEach(agent=> {
-    store.dispatch(agents({ ...agent }));
+    store.dispatch(agentContact({ ...agent }));
 })}, 5000)
 
 
