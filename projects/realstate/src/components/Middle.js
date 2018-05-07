@@ -14,8 +14,7 @@ const images = require.context('../common/images', true);
 class Middle extends Component {
     render() {
         const { housings } = this.props;
-        console.log(housings)
-        debugger;
+        
         return (
             <div className="content_bottom">
                 <div className="col-md-7">
@@ -37,11 +36,18 @@ class Middle extends Component {
                             </div>
                         <div className="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                                 <ul className="tab_img tab_1">
-                                    {housings.map((housing, ind) => (
+                                    {/*housings.map((housing, ind) => (
                                         <li className={ind === housings.length-1 ? "last" : ""}>
                                             <HousingBox {...housing} />
                                         </li>
-                                    ))}
+                                    ))*/
+                                        ([1, 2, 3]).map(ind => { 
+                                            return (<li className={ind === 3 ? "last" : ""}>
+                                                <HousingBox {...housings[ind-1]} />
+                                            </li>)
+                                        })
+                                
+                                }
                                     <div className="clearfix"></div>
                                 </ul>
                                 <ul className="tab_img">

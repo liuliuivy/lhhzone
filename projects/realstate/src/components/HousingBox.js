@@ -3,14 +3,17 @@ const images = require.context('../common/images', true);
 
 const HousingBox = props => {
     const { 
-        title,
-        price,
-        img
-    } = props;
+        title = "Loading...",
+        price = 0,
+        img = ""
+    } = props || {};
 
     return (
         <div className="client_box1">
-            <img src={images("./" + img + ".jpg")} className="img-responsive" alt="" />
+            {img === ""
+                ? <div style={{ maxWidth: "100%", height: "132px" }}> Loading... </div>
+                : <img src={images("./" + img + ".jpg")} className="img-responsive" alt="" />
+            }
             <div className="box_type">$&nbsp;{price.toString()}</div>
             <h3 className="m_1">
                 <a href="single.html">{title}</a>
