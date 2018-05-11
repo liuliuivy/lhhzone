@@ -36,4 +36,4 @@ const HousingBox = props => {
     )
 }
 
-export default HousingBox
+export default HousingBox;

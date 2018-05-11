@@ -4,7 +4,8 @@ export const agentContact = (
     {
         name = '',
         phoneNumber = '',
-        mail=''
+        mail='',
+        img='',
     } = {}
 ) => ({
     type: 'AGENT_INFO',
@@ -13,5 +14,6 @@ export const agentContact = (
         name,
         phoneNumber,
         mail,
+        img,
     }
 });
