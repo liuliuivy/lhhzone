@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import $ from '../common/js/easyResponsiveTabs.js';
 
+import { addHousing } from '../actions/housings';
 import HousingBox from './HousingBox';
+
+import housings from "../common/data/housings";
 
 import "../common/css/bootstrap.css";
 import "../common/css/jquery.fancybox.css";
@@ -14,7 +17,7 @@ const images = require.context('../common/images', true);
 class Middle extends Component {
     render() {
         const { housings } = this.props;
-        
+
         return (
             <div className="content_bottom">
                 <div className="col-md-7">
@@ -34,20 +37,20 @@ class Middle extends Component {
                                     <div className="clearfix"></div>
                                 </ul>
                             </div>
-                        <div className="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+                            <div className="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                                 <ul className="tab_img tab_1">
                                     {/*housings.map((housing, ind) => (
                                         <li className={ind === housings.length-1 ? "last" : ""}>
                                             <HousingBox {...housing} />
                                         </li>
                                     ))*/
-                                        ([1, 2, 3]).map(ind => { 
+                                        ([1, 2, 3]).map(ind => {
                                             return (<li className={ind === 3 ? "last" : ""}>
-                                                <HousingBox {...housings[ind-1]} />
+                                                <HousingBox {...housings[ind - 1]} />
                                             </li>)
                                         })
-                                
-                                }
+
+                                    }
                                     <div className="clearfix"></div>
                                 </ul>
                                 <ul className="tab_img">
@@ -249,7 +252,7 @@ class Middle extends Component {
                                     <div className="clearfix"></div>
                                 </ul>
                             </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,6 +265,17 @@ class Middle extends Component {
             width: 'auto', //auto or any width like 600px
             fit: true   // 100% fit in a container
         });
+        $.get("https://fierce-ravine-69937.herokuapp.com/housings", ({ housings }) => {
+            housings.forEach(housing => {
+                this.props.addHousing({ ...housing });
+            })
+        });
+        /*
+        setTimeout(() => {
+            housings.forEach(housing => {
+                this.props.addHousing({ ...housing });
+            })
+        }, 3000);*/
     }
 }
 
@@ -269,7 +283,13 @@ const mapStateToProps = state => ({
     housings: state.housings
 })
 
+const mapDispatchToProps = dispatch => ({
+    addHousing: housing => {
+        dispatch(addHousing(housing));
+    }
+})
+
 export default connect(
     mapStateToProps,
-    null
+    mapDispatchToProps
 )(Middle)
