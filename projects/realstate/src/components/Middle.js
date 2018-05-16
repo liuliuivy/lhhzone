@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import $ from '../common/js/easyResponsiveTabs.js';
-
 import { addHousing } from '../actions/housings';
 import HousingBox from './HousingBox';
 
