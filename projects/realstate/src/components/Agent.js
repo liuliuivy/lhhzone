@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import $ from '../common/js/easyResponsiveTabs.js';
+import { agentContact } from '../actions/agent';
 import "../common/css/bootstrap.css";
 import "../common/css/jquery.fancybox.css";
 import "../common/css/style.css";
@@ -26,13 +28,27 @@ class Agent extends Component {
 				</div>
 		)
 	}
+	componentDidMount() {
+		$.get("http://fierce-ravine-69937.herokuapp.com/agents", ({ agents }) => {
+            agents.forEach(agent => {
+                this.props.agentContact({ ...agent });
+            })
+        });
+	}
 }
 
 const mapStateToProps = state => ({
 	agents: state.agents,
 })
+const mapDispatchToProps = dispatch => ({
+    agentContact: agent => {
+        dispatch(agentContact(agent));
+    }
+})
 
 export default connect(
-	mapStateToProps,
-	null
+    mapStateToProps,
+    mapDispatchToProps
 )(Agent);
+
+

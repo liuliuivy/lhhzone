@@ -10,14 +10,8 @@ import configureStore from './store/configureStore';
 import {agentContact} from './actions/agent';
 
 
-import agents from "./common/data/agents";
 
 const store = configureStore();
-
-setTimeout(()=>{agents.forEach(agent=> {
-    store.dispatch(agentContact({ ...agent }));
-})}, 5000)
-
 
 
 const state = store.getState();
